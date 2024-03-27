@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: chatbot-Java-IA
+  datasource:
+    url: jdbc:h2:mem:cji2024
+    driver-class-name: org.h2.Driver
+    username: sa
+    password: ''
+  h2:
+    console:
+      enabled: true
