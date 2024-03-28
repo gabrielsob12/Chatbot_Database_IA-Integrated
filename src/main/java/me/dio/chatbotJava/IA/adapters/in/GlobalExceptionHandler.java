@@ -3,15 +3,11 @@ package me.dio.chatbotJava.IA.adapters.in;
 import me.dio.chatbotJava.IA.domain.exception.ChampionNotFoundException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
-import org.springframework.web.bind.annotation.ResponseStatus;
-import org.springframework.web.bind.annotation.RestControllerAdvice;
 
 @ControllerAdvice
-
 public class GlobalExceptionHandler {
 
     private final Logger logger = LoggerFactory.getLogger(GlobalExceptionHandler.class);
@@ -30,7 +26,5 @@ public class GlobalExceptionHandler {
                 .internalServerError()
                 .body(new ApiError(message));
     }
-
-
     public record ApiError(String message) { }
 }
