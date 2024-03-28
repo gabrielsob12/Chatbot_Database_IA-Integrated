@@ -1,4 +1,4 @@
-package me.dio.chatbotJava.IA.adapters.in;
+package me.dio.chatbotJava.IA.adapters.in.exception;
 
 import me.dio.chatbotJava.IA.domain.exception.ChampionNotFoundException;
 import org.slf4j.Logger;
